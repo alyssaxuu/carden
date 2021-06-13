@@ -26,7 +26,7 @@ Made by [Anne-Laure Le Cunff](https://twitter.com/anthilemoon) & [Alyssa X](http
 ...and much more!
 
 ## Self-hosting Carden
-You can run Screenity locally without having to install it from the Chrome Store. Here's how:
+You can run Carden locally without having to install it from the Chrome Store. Here's how:
 
 1. Download the code. In the web version of GitHub, you can do that by clicking the green "Code" button, and then "Download ZIP".
 2. Note that there's a [server](https://github.com/alyssaxuu/carden/tree/master/server) folder for the back-end. You will need to setup a server with a MySQL database.
