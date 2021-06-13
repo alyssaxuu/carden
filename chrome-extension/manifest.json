@@ -1,7 +1,7 @@
 {
-    "name": "Carden",
-    "version": "0.1.3",
-    "description": "Flashcard learning thingy",
+    "name": "Carden - Flashcards with Spaced Repetition",
+    "version": "1.0.0",
+    "description": "Grow your knowledge with flashcards and gamification while browsing the web.",
     "background": {
       "scripts": [ "js/ExtPay.js", "js/background.js" ]
     },
