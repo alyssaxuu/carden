@@ -1,0 +1,61 @@
+{
+    "name": "Carden",
+    "version": "0.1.3",
+    "description": "Flashcard learning thingy",
+    "background": {
+      "scripts": [ "js/ExtPay.js", "js/background.js" ]
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjPdBnvWvgwoXwX767PqA3lhSlMN49TUYekh8/nrq8rrkEbypECHdAv0oY19xbrQDBwvDLEKaE6uchp7lgB/e50SwNh7sSrKKMWglYhEwnTVbECkkRH58/pRQQsmF+xWoUHOUUivdM7tASMtryoxlXu1GeW8NTfwDaV0h5pK5qCNPc1kqz4oBl4Ff+E7N8dHqc+LAxCym7N6Se/pJWp4UlEmWUZ9D0HPt25B61RigZpQNyqet64HMy/u7k06JOutMblt3JUQ5JZ4yiISKAwrWVLWMk8jcaFVEkzb78+yzEKXmU49be4yOJbZmdN+gvjhTd9HRls7BKGaR8+49zz9jwQIDAQAB",
+    "oauth2": {
+        "client_id": "89741484063-4dc9gjdcqhschtsfj9himns722l5r7ro.apps.googleusercontent.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/contacts.readonly"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+            "<all_urls>"
+            ],
+            "js": ["js/jquery-3.5.1.min.js", "js/content.js"]
+        },
+        {
+            "matches": ["https://extensionpay.com/*"],
+            "js": ["js/ExtPay.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/charts/loader.js https://extensionpay.com; object-src 'self'",
+    "browser_action": {
+       "name": "Flashcard",
+       "default_popup": "html/popup.html"
+    },
+    "icons": {
+      "16": "assets/extension-icons/logo-16.png",
+      "128": "assets/extension-icons/logo-128.png",
+      "48": "assets/extension-icons/logo-48.png"
+    },
+    "web_accessible_resources": [
+        "assets/images/*",
+        "css/*",
+        "js/jquery-3.5.1.min.js",
+        "js/overlay.js",
+        "html/overlay.html",
+        "html/new-card.html",
+        "html/settings.html",
+        "html/stats.html",
+        "html/logged-in.html",
+        "html/log-in.html",
+        "html/context.html"
+    ],
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "identity",
+        "storage",
+        "identity.email",
+        "downloads",
+        "tabs"
+    ]
+}

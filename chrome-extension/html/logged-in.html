@@ -1,0 +1,101 @@
+<div id="header">
+            <div id="badge">
+                <div id="progress-circle">
+                    <svg id="progress-ring" width="50" height="50">
+                        <circle id="progress-ring-circle" stroke="#5BC36E" stroke-width="3" fill="transparent" r="23" cx="25" cy="25" stroke-dashoffset="194.7787"/>
+                    </svg>
+                    <img id="level-image" src="../assets/images/seedling.svg">
+                    <div id="level-text">
+                        <p id="level-name">Tiny seedling</p>
+                        <p id="level-number">Level 5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="deck">
+                <p>All cards</p><img src="../assets/images/dropdown-icon.svg">
+            </div>
+            <div id="deck-menu" class="menu-closed">
+                <div id="arrow-outer"><div id="arrow-inner"></div></div>
+                <div class="menu-section" id="new-deck">
+                    <img src="../assets/images/new-deck.svg">
+                    <p>New deck</p>
+                </div>
+                <hr>
+                <div class="menu-section">
+                    <p>All cards</p>
+                </div>
+            </div>
+            <div id="header-buttons">
+                <button id="session-button" class="session-ready">Start session</button>
+                <button id="edit-cards-button">Edit cards</button>
+            </div>
+            <div id="nav">
+                <nav role="navigation" id="nav-left">
+                    <a href="#" class="active-nav" id="new-card">New card</a>
+                    <a href="#" id="stats">Stats</a>
+                    <a href="#" id="settings">Settings</a>
+                </nav>
+                <a href="#" id="more-nav"><img src="../assets/images/more-icon.svg"></a>
+            </div>
+        </div>
+        <div id="more-menu" class="menu-closed">
+            <div id="arrow-outer"><div id="arrow-inner"></div></div>
+            <div class="menu-section">
+                <img src="../assets/images/help.svg">
+                <p>Help</p>
+            </div>
+            <hr>
+            <div class="menu-section">
+                <img src="../assets/images/import.svg">
+                <p>Import cards</p>
+            </div>
+            <hr>
+            <div class="menu-section">
+                <img src="../assets/images/export.svg">
+                <p>Export cards</p>
+            </div>
+            <hr>
+            <div class="menu-section">
+                <img src="../assets/images/link.svg">
+                <p>Go to the website</p>
+            </div>
+            <hr>
+            <div class="menu-section">
+                <img src="../assets/images/star.svg">
+                <p>Rate extension</p>
+            </div>
+        </div>
+        <div id="premium-blocked" class="premium-hidden">
+            <div id="premium-modal" class="premium-hidden">
+                <h1>Want more features?</h1>
+                <table id="premium-features">
+                  <tr>
+                    <td><img src="../assets/images/small-check.svg"> No card limit</td>
+                    <td><img src="../assets/images/small-check.svg"> No deck limit</td>
+                  </tr>
+                  <tr>
+                    <td><img src="../assets/images/small-check.svg"> Export stats</td>
+                    <td><img src="../assets/images/small-check.svg"> Import cards</td>
+                  </tr>
+                </table>
+                <div id="get-pro">Become PRO ($55/year)</div>
+            </div>
+            <div id="premium-later">No thanks, maybe later</div>
+        </div>
+        <div id="content">
+            <div id="new-card">
+                <div id="source-field" class="input-field">
+                    <label for="source">Source</label>
+                    <p id="source-preset">https://alyssax.com</p>
+                </div>
+                <div id="question-field" class="input-field">
+                    <label for="question">Question</label>
+                    <textarea placeholder="Your question" name="question" id="input-question" class="card-input" cols="10" rows="3"></textarea>
+                </div>
+                <div id="answer-field" class="input-field">
+                    <label for="answer">Answer</label>
+                    <textarea placeholder="Your answer" name="question" id="input-answer" class="card-input" cols="10" rows="3"></textarea>
+                </div>
+                <button id="create-card" class="create-off">Create a new card</button>
+            </div>
+        </div>

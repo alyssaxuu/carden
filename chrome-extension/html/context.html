@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/nice-select.css">
+        <link rel="stylesheet" href="../css/context.css">
+    </head>
+<body>
+    <div id="background"></div>
+    <div id="container">
+        <div id="new-card">
+            <div id="deck-field" class="input-field">
+                <label for="deck">Deck</label>
+                <select id="deck-select">
+                    <option>Main deck</option>
+                </select>
+            </div>
+            <div id="source-field" class="input-field">
+                <label for="source">Source</label>
+                <p id="source-preset">https://alyssax.com</p>
+            </div>
+            <div id="question-field" class="input-field">
+                <label for="question">Question</label>
+                <textarea placeholder="Your question" name="question" id="input-question" class="card-input" cols="10" rows="3"></textarea>
+            </div>
+            <div id="answer-field" class="input-field">
+                <label for="answer">Answer</label>
+                <textarea placeholder="Your answer" name="question" id="input-answer" class="card-input" cols="10" rows="3"></textarea>
+            </div>
+            <button id="create-card" class="create-off">Create a new card</button>
+        </div>
+    </div>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/context.js"></script>
+</body>
+</html>

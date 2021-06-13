@@ -1,0 +1,143 @@
+html, body {
+    margin: 0px;
+}
+#background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#container {
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #F7F8FA;
+    border: 1px solid #C5C8CA;
+    box-shadow: 0px 10px 40px rgba(53, 87, 98, 0.15);
+    border-radius: 5px;
+    height: fit-content;
+    padding: 15px;
+}
+#new-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    color: #69708A;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+}
+#source-field {
+    margin-top: 20px;
+}
+#source-preset {
+    font-family: "Roboto";
+    font-size: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
+}
+.input-field {
+    margin-bottom: 12px;
+}
+#input-question {
+    overflow: hidden;
+}
+.card-input {
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 78px;
+    width: 100%;
+    border: 1px solid #E7EAEC;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    resize: none;
+    padding: 14px 14px 14px 14px;
+    box-sizing: border-box;
+}
+.card-input:focus {
+    outline: none!important;
+    box-shadow: inset 0 0 0 2px #5BC36E;
+}
+#create-card {
+    width: 100%;
+    border: none;
+    height: 40px;
+    background-color: #5BC36E;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color .25s cubic-bezier(.05,.03,.35,1);
+}
+#create-card img {
+    width: 30px;
+    margin-top: 4px;
+}
+#create-card:hover:not(.create-off) {
+    background-color: #48B35C;
+    cursor: pointer;
+}
+#create-card:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #5BC36E;
+}
+.create-off {
+    background-color: #AEDAA3!important;
+}
+
+/* Input placeholder styling (cross-browser) */
+::placeholder { 
+    color: #BDBEC3;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+    color: #BDBEC3;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+::-ms-input-placeholder { 
+    color: #BDBEC3;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.nice-select {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 14px;
+}
+.nice-select .list {
+    max-height: 200px;
+    overflow: auto;
+    width: 100%;
+}
+.nice-select .list li {
+    padding-left: 14px;
+}
+.nice-select:after {
+    right: 14px;
+}

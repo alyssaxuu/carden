@@ -1,0 +1,229 @@
+body, html {
+    margin: 0px;
+    background-color: #F7F8FA;
+}
+nav {
+    height: 83px;
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: 1px solid #E7EAEC;
+    line-height: 83px;
+    position: fixed;
+    top: 0px;
+}
+#logo {
+    width: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+#links {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #69708A!important;
+    font-size: 16px;
+    height: 100%;
+}
+#links p, #links a {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#links p {
+    color: #5BC36E!important;
+    margin: 0px;
+    margin-right: 35px;
+}
+#links a {
+    color: #69708A!important;
+    margin-right: 35px;
+}
+#new-card {
+    height: 49px;
+    line-height: 49px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #5BC36E;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    color: #FFF;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+#new-card:hover {
+    cursor: pointer;
+    background-color: #48B35C;
+}
+#new-card img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    width: 19px;
+    margin-top: -1px;
+}
+#review {
+    height: 49px;
+    line-height: 49px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 1px solid #E7EAEC;
+    padding-right: 20px;
+    position: absolute;
+    right: 240px;
+    top: 16px;
+    color: #69708A!important;
+    text-decoration: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+#review img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    width: 19px;
+}
+#review:hover {
+    cursor: pointer;
+}
+#table-wrap {
+    min-height: 65vh;
+    background-color: #FFF;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 1px solid #E7EAEC;
+    margin-top: 20px;
+}
+table {
+    text-align: left;
+    font-family: Roboto;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #E7EAEC;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #69708A;
+    font-weight: 500;
+    font-size: 14px;
+}
+td {
+    max-width: 250px;
+    overflow-wrap: break-word;
+}
+th, td {
+    padding: 15px;
+}
+tr {
+    border-bottom: 1px solid #E7EAEC;
+}
+button {
+    background: #E7EAEC;
+    color: #69708A;
+    font-weight: 700;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+td {
+    font-size: 14px;
+}
+h1 {
+    font-family: Roboto;
+    font-size: 20px;
+    margin-left: 7.5%;
+    margin-top: 150px;
+}
+.delete-card {
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 22px;
+}
+.delete-card:hover, .cancel-card:hover, .cancel-move:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+.cancel-card, .move-label, .cancel-move {
+    font-family: Roboto;
+    display: inline-block;
+    margin-left: 15px;
+    color: #69708A;
+    vertical-align: middle;
+}
+textarea {
+    width: -webkit-fill-available;
+    border: 1px solid #E7EAEC;
+    font-family: "Roboto";
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.save-card, .apply-move {
+    background-color: #5BC36E;
+    color: #FFF;
+}
+.edit-off {
+    background-color: #AEDAA3!important;
+}
+.move-cards {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.delete {
+    color: #EA476E!important;
+    background-color: #FFE0E8!important;
+}
+.moving-on {
+    display: none;
+}
+.moving {
+    display: inline-block;
+}
+.move-label {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.nice-select {
+    float: none!important;
+    display: inline-block;
+    width: 150px;
+}
+.nice-select .list {
+    width: 150px;
+    max-height: 200px;
+    overflow: auto;
+}
+.cancel-move {
+    font-weight: 700;
+}
+.apply-move {
+    margin-left: 15px;
+}
