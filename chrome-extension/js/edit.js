@@ -66,19 +66,22 @@ $(document).ready(function() {
     }
 
     function deleteCard() {
-        var cardparent = $(this).parent().parent();
-        var cardid = cardparent.attr("id").replace("card", "");
-        chrome.storage.sync.get(['auth_token'], function(result) {
-            $.post("../../server/delete_card.php", {
-                auth_id: result.auth_token,
-                id: cardid
-            }, function(data) {
-                console.log(data);
-                if (data == "Deleted") {
-                    cardparent.remove();
-                }
+        var confirm = window.confirm("Are you sure you want to delete this card?");
+        if (confirm) {
+            var cardparent = $(this).parent().parent();
+            var cardid = cardparent.attr("id").replace("card", "");
+            chrome.storage.sync.get(['auth_token'], function(result) {
+                $.post("../../server/delete_card.php", {
+                    auth_id: result.auth_token,
+                    id: cardid
+                }, function(data) {
+                    console.log(data);
+                    if (data == "Deleted") {
+                        cardparent.remove();
+                    }
+                });
             });
-        });
+        }
     }
 
     function editCard() {
