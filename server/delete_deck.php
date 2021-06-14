@@ -7,11 +7,11 @@
 	    $auth = $_POST["auth_id"];
 	    $id = $_POST["id"];
 	    $sql = "DELETE FROM decks WHERE id='$id' AND user='$auth'";
-        if ($conn->query($sql) === TRUE) {
-            $sql = "DELETE FROM cards WHERE deck='$id' AND user='$auth'";
-            if ($conn->query($sql) === TRUE) {
-                echo "Deleted";
-            }
-        }
+	    if ($conn->query($sql) === TRUE) {
+		    $sql = "DELETE FROM cards WHERE deck='$id' AND user='$auth'";
+		    if ($conn->query($sql) === TRUE) {
+			echo "Deleted";
+		    }
+	    }
 	}
 ?>
