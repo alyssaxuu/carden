@@ -1,4 +1,4 @@
-const extpay = ExtPay('carden');
+const extpay = ExtPay('effdlfnfholapaddppkjmkhmfgdbeomj');
 var session_active = true;
 var session_cards = 0;
 var level = 0;
