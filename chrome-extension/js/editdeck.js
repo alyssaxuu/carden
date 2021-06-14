@@ -36,18 +36,21 @@ $(document).ready(function() {
     }
 
     function deleteDeck() {
-        var deckparent = $(this).parent().parent();
-        var deckid = deckparent.attr("id").replace("deck", "");
-        chrome.storage.sync.get(['auth_token'], function(result) {
-            $.post("../../server/delete_deck.php", {
-                auth_id: result.auth_token,
-                id: deckid
-            }, function(data) {
-                if (data == "Deleted") {
-                    deckparent.remove();
-                }
+        var confirm = window.confirm("Are you sure you want to delete this deck and all of its contents?");
+        if (confirm) {
+            var deckparent = $(this).parent().parent();
+            var deckid = deckparent.attr("id").replace("deck", "");
+            chrome.storage.sync.get(['auth_token'], function(result) {
+                $.post("../../server/delete_deck.php", {
+                    auth_id: result.auth_token,
+                    id: deckid
+                }, function(data) {
+                    if (data == "Deleted") {
+                        deckparent.remove();
+                    }
+                });
             });
-        });
+        }
     }
 
     function editDeck() {
