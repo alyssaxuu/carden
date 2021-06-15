@@ -11,6 +11,7 @@ Carden is a Chrome Extension that helps you turn the content you consume into lo
 Made by [Anne-Laure Le Cunff](https://twitter.com/anthilemoon) & [Alyssa X](https://alyssax.com)
 
 <a href="https://www.producthunt.com/posts/carden?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-carden" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=300325&theme=light" alt="Carden - Science-based flashcard app with spaced repetition | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://news.ycombinator.com/item?id=27512769" target="_blank"><img height=53 src="https://hackerbadge.now.sh/api?id=27512769&type=orange" alt="Featured on HackerNews"></a>
 
 ## Table of contents
 - [Features](#features)
