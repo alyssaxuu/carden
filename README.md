@@ -6,7 +6,7 @@ Flashcards with spaced repetition and gamification 🌱
 
 Carden is a Chrome Extension that helps you turn the content you consume into long-term knowledge. Create flashcards in context, view in-depth stats, collect points and level up, and much more.
 
-[Get it now](https://chrome.google.com/webstore/detail/screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji)
+[Get it now](https://chrome.google.com/webstore/detail/carden-flashcards-with-sp/effdlfnfholapaddppkjmkhmfgdbeomj?hl=en&authuser=0)
 
 Made by [Anne-Laure Le Cunff](https://twitter.com/anthilemoon) & [Alyssa X](https://alyssax.com)
 
