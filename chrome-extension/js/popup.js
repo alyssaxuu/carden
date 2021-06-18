@@ -182,7 +182,7 @@ $(document).ready(function() {
         chrome.identity.getAuthToken({
             'interactive': true
         }, function(token) {
-            chrome.identity.getProfileUserInfo(function(info) {
+            chrome.identity.getProfileUserInfo({accountStatus: 'ANY'}, function(info) {
                 auth = info.id;
                 chrome.storage.sync.set({
                     "auth_token": auth
