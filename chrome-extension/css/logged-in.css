@@ -359,7 +359,7 @@ html, body {
     color: #69708A!important;
 }
 .editing-deck-name:after {
-    content: "Deck name";
+    content: "Start typing...";
     color: #BDBEC3;
     display: block;
     position: absolute;
